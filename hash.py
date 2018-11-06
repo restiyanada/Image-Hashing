@@ -2,8 +2,8 @@ from PIL import Image
 import imagehash
 
 path = 'D:/GitHub/image-hashing/img/'
-images = ['python-ori.png','python-modif.png',
-          'python-modif-bgt.png','php.png']
+images = ['python-ori.png','python-modif-bgt.png',
+          'python-modif.png','perl.png']
 images = [path+f for f in images]
 
 hash1 = imagehash.average_hash(Image.open(images[0]))
